@@ -1,0 +1,354 @@
+@charset "utf-8";
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #999;
+}
+
+.clr { clear:both; padding:0; margin:0; background:none;}
+
+.navband1 {
+	background-image: url(images/nav_bg1.png);
+	background-repeat: repeat-x;
+	margin: 0px;
+	height: 40px;
+}
+
+.navbar1 {
+	color: #FFF;
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 10px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10pt;
+	padding-left: 40px;
+}
+.navbar1 a {
+	color: #FFF;
+	text-decoration: none;
+	padding-right: 60px;
+}
+.navbar1 a:hover {
+	color: #FF0;
+}
+
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 100%;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-color: #e6e6e6;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background-color: #0478B7;
+	margin: 0px;
+	height: 65px;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding-top: 0px;
+	padding-right: 0;
+	padding-bottom: 0px;
+	padding-left: 0;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #999;
+	background-image: url(images/footer_bg1.png);
+	background-repeat: repeat-x;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.logo {
+	width: 963px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+.navbar {
+	height: 40px;
+	width: 963px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 0px;
+}
+.page {
+	width: 963px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.page_top {
+	background-image: url(images/body_top1.png);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.page_bottom {
+	background-image: url(images/body_bottom1.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	padding-top: 1px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	color: #000;
+}
+
+.page_main {
+	background-image: url(images/body_sides1.png);
+	background-repeat: repeat-y;
+	width: 968px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #666;
+}
+
+.page a:hover {
+	text-decoration: none;
+}
+
+.page h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16pt;
+	color: #666;
+	font-weight: normal;
+}
+
+
+/*************footer**********/
+.footer_resize {
+	width:963px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding-top: 0px;
+	padding-right: 0;
+	padding-bottom: 0px;
+	padding-left: 0;
+}
+.footer p {
+	color:#000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+}
+.footer a {
+	color:#000;
+	text-decoration:none;
+	padding:5px;
+	margin:0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+}
+
+.footer A:hover {
+	text-decoration: none;
+	color: #FFF;
+}
+.footer p.leftt {
+	text-align:left;
+	width:50%;
+	margin:0;
+	float:left;
+	padding-top: 25px;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 20px;
+} 
+.footer p.rightt {
+	text-align:right;
+	width:30%;
+	margin:0;
+	float:right;
+	padding-top: 15px;
+	padding-right: 20px;
+	padding-bottom: 0;
+	padding-left: 0;
+}
+
+.box_right1 {
+	background-color: #f7f7f7;
+	border: 1px solid #CCC;
+	float: right;
+	width: 250px;
+	margin-right: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	padding: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+	background-image: url(images/box_bg1.png);
+	background-repeat: repeat-x;
+	text-align: center;
+
+}
+.box_title1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+	text-align: left;
+	padding-bottom: 5px;
+	color: #666;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.box_title1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+	text-align: left;
+	padding-bottom: 5px;
+	color: #666;
+	font-weight: normal;
+	font-style: normal;
+}
+.box_title2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	color: #666;
+	font-weight: normal;
+	font-style: normal;
+	padding-top: 10px;
+}
+.box_title3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #666;
+	font-weight: normal;
+	font-style: normal;
+	padding-top: 10px;
+}
+.box_spacer1 {
+	height: 20px;
+	width: 100%;
+}
+.box_indent1 {
+	padding-top: 0px;
+	padding-left: 20px;
+}
+.box_indent2 {
+	padding-top: 0px;
+	padding-left: 20px;
+}
+
+.headline1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	color: #999;
+}
+.headline2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	font-weight: bold;
+	color: #999;
+}
+.popup_right1 {
+	float: right;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+.popup_left1 {
+	float: left;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+.picture_left1 {
+	float: left;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	text-align: center;
+}
+
+.horiz_bar1 {
+	width: 90%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}
+.link_active_arrow1 {
+	background-image: url(images/arrow_right1.gif);
+	padding-left: 10px;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.breadcrumbs {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	float: right;
+	padding-top: 20px;
+	text-align: right;
+}
+.pagetitle1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	float: left;
+	color: #666;
+}
+.granth_floral1 {
+	background-image: url(english/pattern1.gif);
+	background-repeat: repeat-x;
+	height: 38px;
+}
+.granth_floral2 {
+	background-image: url(english/pattern1.gif);
+	background-repeat: repeat-y;
+	width: 38px;
+}
+.granth_content1 {
+	padding: 10px;
+}
+.center1 {
+	text-align: center;
+}
